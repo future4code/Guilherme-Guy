@@ -1,0 +1,66 @@
+body {
+    background-color:#9370DB;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+a {
+    font-size: 40px;
+    color: black;
+    margin: 200px 100px 100px 200px;
+
+}
+
+th{
+    font-size: 25px;
+}
+
+td {
+    font-size: 50px;
+    padding: 100px;
+}
+
+#redes-sociais {
+    font-size: 25px;
+}
+
+footer{
+    padding: 50px;
+    text-align: center;
+}
+
+.contas {
+    float: right;
+    margin-top: 10%;
+
+    
+}
+
+li {
+    font-size: 50px;
+    margin-top: px;
+}
+
+img {
+    width: 30px;
+    padding: 5px;
+    
+}
+
+.projetos {
+    font-size: 50px;
+    margin: 200px;
+}
+
+.menu {
+    background-color: #20B2AA;
+    padding: 15px;
+}

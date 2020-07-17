@@ -1,0 +1,59 @@
+body {
+    background-color:#9370DB;
+}
+
+h1{
+    text-align: center;
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+a {
+    font-size: 40px;
+    color: black;
+    padding: 160px;
+
+}
+
+th{
+    font-size: 25px;
+}
+
+td {
+    font-size: 50px;
+    padding: 100px;
+}
+
+#redes-sociais {
+    font-size: 25px;
+}
+
+footer{
+    padding: 50px;
+    text-align: center;
+}
+
+.contas {
+    float: right;
+
+    
+}
+
+img {
+    width: 800px;
+    padding: 5px;
+    
+}
+
+p {
+    font-size: 500px;
+}
+
+.menu {
+    background-color: #20B2AA;
+    padding: 15px;
+}

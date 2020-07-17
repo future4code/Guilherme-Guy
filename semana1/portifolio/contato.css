@@ -1,0 +1,74 @@
+body {
+    background-color:#9370DB;
+}
+
+h1 {
+    text-align: center;
+    font-size: 100px;
+}
+
+a {
+    font-size: 40px;
+    color: black;
+    margin: 200px 100px 100px 200px;
+}
+
+h2 {
+    font-size: 60px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+label {
+    font-size: 40px;
+}
+
+#nome {
+    width: 500px;
+    padding:10px;
+    margin-left: 80px;
+}
+
+#email {
+    width: 500px;
+    padding: 10px;
+    margin-left: 70px;
+
+}
+
+#telefone {
+    width: 500px;
+    padding: 10px;
+    margin-left: 40px;
+
+}
+
+#mensagem {
+    width: 500px;
+    padding: 10px;
+    margin-left: 3px;
+
+}
+
+button {
+    padding:10px;
+   
+    width: 530px;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+img {
+
+    width: 400px;
+    margin-left: 1150px;
+    position: absolute;
+    top: 45%;
+
+    
+}
+
+.menu {
+    background-color: #20B2AA;
+    padding: 15px;
+}
