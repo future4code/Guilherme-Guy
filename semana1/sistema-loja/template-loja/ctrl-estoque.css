@@ -1,0 +1,38 @@
+body {
+    background-color:#9370DB;
+}
+
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+a {
+    font-size: 40px;
+    color: black;
+    padding: 100px;
+
+}
+
+th{
+    font-size: 25px;
+}
+
+td {
+    font-size: 50px;
+    padding: 100px;
+}
+
+#redes-sociais {
+    font-size: 25px;
+}
+
+footer{
+    padding: 50px;
+    text-align: center;
+}

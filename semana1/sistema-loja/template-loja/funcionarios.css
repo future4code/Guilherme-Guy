@@ -1,0 +1,35 @@
+body {
+    background-color:#9370DB;
+}
+
+#nome {
+    text-align: center;
+    font-size: 100px;
+}
+a {
+    font-size: 40px;
+    color: black;
+    padding: 100px;
+
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+li{
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 250px;
+}
+
+img{
+    width: 500px;
+    margin-left: 900px;
+    position: absolute;
+    top: 50%;
+
+}
+
