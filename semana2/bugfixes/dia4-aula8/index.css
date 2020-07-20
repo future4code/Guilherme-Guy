@@ -70,6 +70,15 @@ div img {
     width: auto;
 }
 
+.icone:hover {
+   opacity: 0.5;
+}
+
+.icone:active {
+    opacity: 1.0;
+ }
+ 
+
 
 /** 
   *
@@ -85,7 +94,7 @@ div img {
 }
 
 #container-de-descricao>ol {
-    padding: 15px 0px;
+    padding: 15px 800px;
     
 
 }
