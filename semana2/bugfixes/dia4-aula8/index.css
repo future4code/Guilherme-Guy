@@ -35,7 +35,7 @@ div>p:first-child {
 }
 
 div img {
-    background: black;
+    background: white;
 }
 
 .botao-amarelo {
@@ -61,6 +61,7 @@ div img {
 
 .icone {
     height: 15px;
+    width: auto;
 }
 
 
@@ -73,12 +74,13 @@ div img {
 #container-de-descricao {
     background-color: #2274a5;
     color: white; 
-    padding-top: 50px;
+    padding-top: 80px;
 
 }
 
 #container-de-descricao>ol {
     padding: 15px 0px;
+    
 
 }
 
@@ -106,6 +108,8 @@ div:last-child {
 
 table {
     width: 60%;
+    position: absolute;
+    right: 250px;
 }
 
 td button {
