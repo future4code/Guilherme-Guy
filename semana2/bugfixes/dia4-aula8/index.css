@@ -114,6 +114,9 @@ table {
     width: 60%;
     position: absolute;
     right: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
 }
 
 td button {
@@ -122,6 +125,7 @@ td button {
     height: 30px;
     border-radius: 5px;
     color: black;
+    font-weight: bold;
 }
 
 .container-do-search {
@@ -145,6 +149,7 @@ td button {
 }
 
 #novobotao:hover{
-    background-color: #635a3d
+    background-color: #635a3d;
+    
 }
 
