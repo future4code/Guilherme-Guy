@@ -52,7 +52,9 @@ div img {
     color: white;
     position: absolute;
     right: 820px;
-    top: 700px;}
+    top: 800px;
+    border: none;
+}
 
 .botao-amarelo:hover {
     background-color: #c44f00;
@@ -90,6 +92,7 @@ div img {
 
 #container-para-comprar {
     background-color: #e7eb90;
+    padding: 100px;
 }
 
 #container-para-comprar>p {
@@ -114,7 +117,7 @@ table {
     width: 60%;
     position: absolute;
     right: 400px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto;
     font-weight: bold;
 
 
@@ -156,6 +159,7 @@ td button {
 
 #novobotao:hover{
     background-color: #635a3d;
+    color: white;
     
 }
 
