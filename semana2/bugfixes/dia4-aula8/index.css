@@ -113,9 +113,10 @@ div:last-child {
 table {
     width: 60%;
     position: absolute;
-    right: 250px;
+    right: 400px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+
 
 }
 
@@ -126,6 +127,8 @@ td button {
     border-radius: 5px;
     color: black;
     font-weight: bold;
+    border: none;
+    
 }
 
 .container-do-search {
@@ -142,6 +145,9 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    position: absolute;
+    top: 600px;
+    right: 900px;
 }
 
 #back-button:hover {
@@ -151,5 +157,13 @@ td button {
 #novobotao:hover{
     background-color: #635a3d;
     
+}
+
+td {
+    text-align: center;
+}
+
+#tamanhofoto {
+    width: 50px;
 }
 
