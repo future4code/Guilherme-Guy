@@ -1,0 +1,90 @@
+body {
+    background-color:#9370DB;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    position: relative;
+    left: 0.45%;
+}
+
+#slogan {
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+a {
+    font-size: 40px;
+    color: black;
+    margin: 200px 100px 100px 200px;
+    text-decoration: none;
+
+}
+
+h2 {
+ font-size: 25px;
+}
+
+#sobre-mim {
+    margin-top: 80px;
+    position: relative;
+    left: 8%;
+}
+
+#historia {
+    font-size: 22px;
+}
+
+#redes-sociais {
+    font-size: 25px;
+    position: relative;
+    top: 100%;
+}
+
+footer{
+    padding: 50px;
+    text-align: center;
+}
+
+img{
+    width: 30px;
+    padding: 5px;
+    
+}
+
+.contas {
+    float: right;
+}
+
+h3{
+    font-size: 25px;
+}
+
+li{
+    font-size: 22px;
+    margin-top: 10px;
+
+}
+.logo {
+    width: 400px;
+    position: absolute;
+    top:395px;
+    right: 378px;
+
+}
+
+.menu {
+    background-color: #20B2AA;
+    padding: 15px;
+}
+
+.textos
+{
+    position: relative;
+    left: 8%;
+    
+}
+
+

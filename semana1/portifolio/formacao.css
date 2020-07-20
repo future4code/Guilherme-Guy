@@ -1,0 +1,42 @@
+body {
+    background-color:#9370DB;
+}
+
+
+#nome {
+    text-align: center;
+    font-size: 80px;
+}
+a {
+    font-size: 40px;
+    color: black;
+    margin: 200px 100px 100px 200px;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+li{
+    font-size: 30px;
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+img{
+    width: 400px;
+    position: absolute;
+    top:400px;
+    right: 400px;
+
+}
+
+.menu {
+
+    background-color: #20B2AA;
+    padding: 15px;
+
+}
