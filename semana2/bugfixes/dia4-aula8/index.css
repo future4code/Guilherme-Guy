@@ -1,0 +1,182 @@
+/** 
+  *
+  *  ESTILOS GERAIS 
+  *
+  **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    background-color: #fe7e02;
+    padding: 10px 5px 10px 5px;
+    color: white;
+    text-align: center;
+}
+
+input {
+    height: 20px;
+    width: 500px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: 0;
+}
+
+button:focus {
+    color: white;
+}
+
+img {
+    width: 100px;
+}
+
+div>p:first-child {
+    display: inline;
+}
+
+div img {
+    background: white;
+}
+
+.botao-amarelo {
+    display: block;
+    background-color: #ffaf43;
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    right: 820px;
+    top: 800px;
+    border: none;
+}
+
+.botao-amarelo:hover {
+    background-color: #c44f00;
+}
+
+.container {
+    height: 500px;
+    text-align: center;
+}
+
+.icone {
+    height: 15px;
+    width: auto;
+}
+
+.icone:hover {
+   opacity: 0.5;
+}
+
+.icone:active {
+    opacity: 1.0;
+ }
+ 
+
+
+/** 
+  *
+  *  ESTILOS HOME 
+  *
+  **/
+
+#container-de-descricao {
+    background-color: #2274a5;
+    color: white; 
+    padding-top: 80px;
+
+}
+
+#container-de-descricao>ol {
+    padding: 15px 800px;
+    
+
+}
+
+#container-para-comprar {
+    background-color: #e7eb90;
+    padding: 100px;
+}
+
+#container-para-comprar>p {
+    color: #c44f00;
+    padding: 100px 0;
+    font-size: 60px;
+}
+
+
+/**
+  *
+  *  ESTILOS COMPRAR 
+  *
+  **/
+
+div:nth-child(2),
+div:last-child {
+    text-align: center;
+}
+
+table {
+    width: 60%;
+    position: absolute;
+    right: 400px;
+    font-family: Roboto;
+    font-weight: bold;
+
+
+}
+
+td button {
+    background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    
+}
+
+.container-do-search {
+    margin-top: 20px;
+    height: 100px;
+}
+
+
+#back-button {
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 10px;
+    color: black;
+    position: absolute;
+    top: 600px;
+    right: 900px;
+}
+
+#back-button:hover {
+    background-color: #635a3d
+}
+
+#novobotao:hover{
+    background-color: #635a3d;
+    color: white;
+    
+}
+
+td {
+    text-align: center;
+}
+
+#tamanhofoto {
+    width: 50px;
+}
+
