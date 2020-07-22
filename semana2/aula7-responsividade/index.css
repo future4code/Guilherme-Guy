@@ -1,0 +1,288 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    border: 1px solid black;
+}
+
+#first-block {
+    background-color: red;
+    padding: 3rem;
+}
+
+#parteum {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 10rem;
+    }
+
+#partedois {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 10rem;
+    }
+
+#partetres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20rem;
+}
+
+#partequatro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 12rem; }
+    
+
+.blue-block {
+    background-color: blue;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.yellow-block {
+    background-color: yellow;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.green-block {
+    background-color: green;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.white-block {
+    background-color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+   
+}
+
+@media screen and (min-device-width : 421px) and (max-device-width : 800px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    
+    div {
+        border: 1px solid black;
+    }
+    
+    #first-block {
+        background-color: red;
+        padding: 3rem;
+
+    }
+    
+    #parteum {
+        display: flex;
+        flex-wrap: wrap;
+        height: 250px;
+
+
+        }
+    
+    #partedois {
+        display: flex;
+        flex-wrap: wrap;
+        height: 250px;
+        }
+    
+    #partetres {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 20rem;
+    }
+    
+    #partequatro {
+        display: flex;
+        flex-wrap: wrap;
+        height: 250px; }
+        
+    
+    .blue-block {
+        background-color: blue;
+        margin: 10px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 100px;
+        
+        
+        
+    }
+    
+    .yellow-block {
+        background-color: yellow;
+        margin: 10px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 100px;
+        
+        
+    }
+    
+    .green-block {
+        background-color: green;
+        margin: 10px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        height: 100px;
+       
+    }
+    
+    .black-block {
+        background-color:black;
+        color: white;
+        margin: 10px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .white-block {
+        background-color: white;
+        margin: 10px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        width: 270px;
+        height: 100px;
+       
+    }
+
+    #ajustebranco {
+        width: 600px;
+    }
+        
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 420px) {
+    /* celulares */
+    
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    border: 1px solid black;
+}
+
+#first-block {
+    background-color: red;
+    padding: 3rem;
+}
+
+#parteum {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 20rem;
+    }
+
+#partedois {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 20rem;
+    }
+
+#partetres {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 15rem;
+}
+
+#partequatro {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 20rem; }
+    
+
+.blue-block {
+    background-color: blue;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.yellow-block {
+    background-color: yellow;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.green-block {
+    background-color: green;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.black-block {
+    background-color: black;
+    color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.white-block {
+    background-color: white;
+    margin: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+   
+}
+}
