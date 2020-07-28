@@ -106,12 +106,17 @@
 
 //4) 
 
-let perguntas = ["Voce gosta de frio? ", "Voce é mulher? ", "Sabe voar? "]
-let respostas = [true, false]
+// let perguntas = ["Voce gosta de frio? ", "Voce é mulher? ", "Sabe voar? "]
+// let respostas = [true, false]
 
-console.log (perguntas[0], respostas[0]) 
-console.log (perguntas[1], respostas[1]) 
-console.log (perguntas[2], respostas[0]) 
+// console.log (perguntas[0], respostas[0]) 
+// console.log (perguntas[1], respostas[1]) 
+// console.log (perguntas[2], respostas[0]) 
+
+console.log("4. ", (9*5) + 3)
+
+
+
 
 
 
