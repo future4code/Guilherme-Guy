@@ -159,6 +159,265 @@
 
 
 
+const nome = prompt("Qual o seu nome?")
+const tipoDoJogo = prompt("Indique o tipo de jogo: IN indica internacional e DO indica doméstico")
+const etapaDoJogo = prompt("Indique etapa do jogo: SF indica semi-final; DT indica decisão de terceiro lugar; e FI indica final")
+const categoria = Number(prompt("Indique a categoria do jogo: 1, 2, 3 ou 4"))
+const quantidade = Number(prompt("Qual a quantidade de ingressos?"))
+let total 
+let valorIngresso
+
+
+if (tipoDoJogo === "IN" && etapaDoJogo === "SF" && categoria === 1) {
+  total = (quantidade * 1320) / 4.10 
+  valorIngresso = (1320 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "SF" && categoria === 2) {
+  total = (quantidade * 880) / 4.10 
+  valorIngresso = (880 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)     
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "SF" && categoria === 3) {
+  total = (quantidade * 550) / 4.10 
+  valorIngresso = (550 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)     
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "SF" && categoria === 4) {
+  total = (quantidade * 220) / 4.10 
+  valorIngresso = (220 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)     
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "DT" && categoria === 1) {
+  total = (quantidade * 660) / 4.10 
+  valorIngresso = (660 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "DT" && categoria === 2) {
+  total = (quantidade * 440) / 4.10 
+  valorIngresso = (440 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "DT" && categoria === 3) {
+  total = (quantidade * 330) / 4.10 
+  valorIngresso = (330 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "DT" && categoria === 4) {
+  total = (quantidade * 140) / 4.10 
+  valorIngresso = (140 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "FI" && categoria === 1) {
+  total = (quantidade * 1980) / 4.10 
+  valorIngresso = (1980 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "FI" && categoria === 2) {
+  total = (quantidade * 1320) / 4.10 
+  valorIngresso = (1320 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "FI" && categoria === 3) {
+  total = (quantidade * 880) / 4.10 
+  valorIngresso = (880 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "IN" && etapaDoJogo === "FI" && categoria === 4) {
+  total = (quantidade * 330) / 4.10 
+  valorIngresso = (330 / 4.10)
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "SF" && categoria === 1) {
+  total = quantidade * 1320
+  valorIngresso = 1320
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "SF" && categoria === 2) {
+  total = quantidade * 880
+  valorIngresso = 880
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "SF" && categoria === 3) {
+  total = quantidade * 550
+  valorIngresso = 550
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "SF" && categoria === 4) {
+  total = quantidade * 220
+  valorIngresso = 220
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "DT" && categoria === 1) {
+  total = quantidade * 660
+  valorIngresso = 660
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "DT" && categoria === 2) {
+  total = quantidade * 440
+  valorIngresso = 440
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "DT" && categoria === 3) {
+  total = quantidade * 330
+  valorIngresso = 330
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "DT" && categoria === 4) {
+  total = quantidade * 170
+  valorIngresso = 170
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "FI" && categoria === 1) {
+  total = quantidade * 1980
+  valorIngresso = 1980
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "FI" && categoria === 2) {
+  total = quantidade * 1320
+  valorIngresso = 1320
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "FI" && categoria === 3) {
+  total = quantidade * 880
+  valorIngresso = 880
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else if (tipoDoJogo === "DO" && etapaDoJogo === "FI" && categoria === 4) {
+  total = quantidade * 330
+  valorIngresso = 330
+  console.log ("Nome do Cliente:", nome)
+  console.log ("Tipo de Jogo:", tipoDoJogo)
+  console.log ("Etapa do Jogo:", etapaDoJogo)
+  console.log ("Categoria:", categoria)
+  console.log ("Quantidade de Ingressos:", quantidade)
+  console.log ("Valor do Ingresso:", valorIngresso)
+  console.log ("Valor total dos ingressos: ", total)
+} else {
+  console.log ("Voce digitou algo errado, tente novamente")
+}
+
+
+
+
+
+
+
 
 
 
