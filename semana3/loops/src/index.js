@@ -163,3 +163,12 @@
 
 // Foi facil, pois ja conhecia esses comandos. 
     
+
+
+const ano = prompt("Informe sua idade?")
+const mes = prompt ("Voce tem " + ano + " anos e quantos meses?")
+const dia = prompt ("Você tem " + ano + " anos, " + mes + " meses e quantos dias?")
+resultado = ((ano * 365) + (mes * 30) + (dia * 1))
+
+console.log("Sua idade em dias é " + resultado)
+
