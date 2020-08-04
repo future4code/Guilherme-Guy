@@ -1,0 +1,8 @@
+#meu-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.texto-azul {
+    color: blue;
+}
