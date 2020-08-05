@@ -95,6 +95,9 @@
 //     for (i = 0; i < 10; i++) 
 //         console.log(mensagem);
 // }
+
+// frase(prompt("Diga"));
+
 // frase("oi");
 
 
@@ -213,4 +216,3 @@
 //     console.log(arrayzinho.reverse())
 // }
 // invertida(numeros)
-
