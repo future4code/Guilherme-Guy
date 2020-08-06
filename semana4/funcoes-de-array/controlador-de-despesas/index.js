@@ -1,6 +1,8 @@
 
 const arrayArquivo = []
+const valoresFilstrados = []
 function cadastraDespesa () { 
+
 
   if (document.getElementById("descricao-despesa").value === '' || document.getElementById("valor-despesa").value <= 0) {
      alert("Por favor, digite um valor real")
@@ -12,41 +14,46 @@ function cadastraDespesa () {
        descricao: document.getElementById("descricao-despesa").value,
         }
 
-        console.log(despesas)
-
-      
+        
         arrayArquivo.push(despesas)
 
-        console.log(arrayArquivo)
-    }
+        const ultimo = arrayArquivo[arrayArquivo.length - 1]
 
-    //   const exibicao = document.getElementById("exibicao")
-    //     exibicao.innerHTML += `<p>${despesas.valor}</p>`
-
+        const exibicao = document.getElementById("exibicao")
+    
+        exibicao.innerHTML += `<p>${ultimo.tipo} ${ultimo.valor} R$</p>`
+    
     document.getElementById("valor-despesa").value = ''
     document.getElementById("descricao-despesa").value = ''
+    }
 }
+
+
+
+
+
+
+
 
 function filtraDespesas () {
     const maxMin = {
-        minimo:Number(document.getElementById("maximo-despesa")),
-        maximo:Number(document.getElementById("minimo-despesa")),
+        minimo:document.getElementById("minimo-despesa").value,
+        maximo:document.getElementById("maximo-despesa").value,
     }    
 
-    for(i=0; i<arrayArquivo.length;i++) {
-    if(arrayArquivo.valor <= maxMin.maximo && arrayArquivo.valor >= maxMin.minimo) {
-        const novoArray = []
-        novoArray.push(arrayArquivo[i].valor)
-        console.log(novoArray)
+    for(i=0;i<arrayArquivo.length;i++) {
+    if(arrayArquivo[i].valor >= Number(maxMin.minimo) && arrayArquivo[i].valor <= Number(maxMin.maximo) && document.getElementById("tipo-despesa").value === "energia") {
+        valoresFilstrados.push(arrayArquivo[i].valor)
+      
     } else {
-        console.log("oi")
+        console.log("aiaia")
     }
+  
 }
+    
+
+    console.log(valoresFilstrados)
 }
-
-
-
-
 
 
 
@@ -54,13 +61,29 @@ function filtraDespesas () {
 
 function apagaFiltros () {
 
+    document.getElementById("minimo-despesa").value = ''
+    document.getElementById("maximo-despesa").value = ''
+
 }
 
-  // const container = document.getElementById("container-de-posts")
-        // container.innerHTML += `<br><h1>Titulo:${post.titulo}</h1>`
-        // container.innerHTML += `<p>Autor:${post.autor}</p><br>`
-        // container.innerHTML += `<img src=${post.imagem}>`
-        // container.innerHTML += `<p>Conteudo:${post.conteudo}</p><br>`
-        // container.innerHTML += `<br>`
+
+
+
+
+
+
+
+
+
+function calculaTotal () {
+            let total = 0
+            console.log(arrayArquivo[0].valor)
+            
+            for(i=0; i<arrayArquivo.length; i++) {
+            total += Number(arrayArquivo[i].valor)
+            }
+            const totalContas = document.getElementById("total")
+            totalContas.innerHTML += `<p>O valor total foi ${total} R$</p>`
+        }
 
 

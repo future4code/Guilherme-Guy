@@ -20,10 +20,6 @@
                 <option value="aluguel">Aluguel</option>
                 <option value="viagens">Viagens</option>
                 <option value="energia">Energia</option>
-                <option value="roles">Roles</option>
-                <option value="agua">Agua</option>
-                <option value="cartao">Cartão de Crédito</option>
-                <option value="outros">Outros</option>
             </select>
            </section>
         <section>
@@ -47,20 +43,17 @@
                 <option value="aluguel">Aluguel</option>
                 <option value="viagens">Viagens</option>
                 <option value="energia">Energia</option>
-                <option value="agua">Agua</option>
-                <option value="cartao">Cartão de Crédito</option>
-                <option value="outros">Outros</option>
             </select>
            </section>
 
             <section>
         <label for="maximo-despesa">Valor Maximo:</label>
-        <input type="number" id="titulo-post" placeholder="R$">
+        <input type="number" id="maximo-despesa" placeholder="R$">
          </section>
  
          <section>
         <label for="minimo-despesa">Valor Mínimo:</label>
-        <input type="number" id="autor-post" placeholder="R$">
+        <input type="number" id="minimo-despesa" placeholder="R$">
     </section>
 
     <section>
@@ -73,8 +66,13 @@
  
     <section id="filhoUm">
 <div><h1>EXTRATO</h1></div>
-    <div><p>Valor total:</p></div>
-    <div id="exibicao"></div>
+    <div id="total">
+        
+    </div>
+    <div id="exibicao">
+
+    </div>
+    <button onclick="calculaTotal()">Calcular total</button>
     </section>
 </section>
 </html>
