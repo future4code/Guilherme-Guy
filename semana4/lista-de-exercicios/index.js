@@ -98,6 +98,55 @@
 // }
 
 
+// - Exercícios de Funções
+    // 1. Escreva uma função que receba um `array` de números e imprima na tela o segundo maior e o segundo menor número. 
+    // Em seguida, invoque essa função. (Não é permitido usar funções de ordenação de vetores.)
+
+
+
+    // const numeros = [1,2,1,3,4,5,6,7,8,9,10]
+
+    // function segundoMaiorMenor(array) {
+
+    //     var max1st = array[0];
+    //     var max2nd = 0;
+      
+    //     for(var i=0; i<array.length; i++) {
+      
+    //       if(array[i] > max1st) {
+    //         max2nd = max1st
+    //         max1st = array[i]
+    //       }
+      
+    //     }
+      
+    //     return max2nd;
+      
+    //   }
+      
+    //   console.log(segundoMaiorMenor(numeros));
+
+
+
+
+
+    // 2. Escreva uma **função não nomeada** que faça um `alert("Hello Future4");`. Em seguida, invoque essa função.
+
+    // const hello = () => {
+    //    console.log("Hello Labenu")
+    //    }
+
+    //    console.log(hello())
+
+
+
+
+
+    
+
+ 
+
+
 
 
 
