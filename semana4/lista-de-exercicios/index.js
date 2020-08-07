@@ -14,5 +14,93 @@
 // 4) Ele pega o menor e o maior numero do array numeros. No caso seria exibido "-10" e "1590"
 
 
+// Exercícios de Lógica de Programação
+
+// 1)
+
+// const array = [1, 2, 3, 4, 5]
+
+// for(i=0; i<array.length; i++){
+//     console.log(array[i])
+// }
+
+// for(let numero of array) {
+//     console.log(array[numero-1])
+// }
+
+// const callback = (elemento, index, array) => {
+//     console.log(elemento)
+// }
+
+// console.log(array.forEach(callback))
+
+
+// 2)
+// a) false
+// b) false
+// c) true
+// d) true
+// e) true
+
+
+// 3)
+
+// const quantidadeDeNumerosPares = Number(prompt("Escolha um numero"))
+// let i = -1
+// while(i < (quantidadeDeNumerosPares - 1)) {
+//     i += 1
+//   console.log(i*2)
+// }
+
+
+// 4)
+
+// const numero1 = Number(prompt("Escolha um numero"))
+// const numero2 = Number(prompt("Escolha um numero"))
+// const numero3 = Number(prompt("Escolha um numero"))
+
+// if(numero1 === numero2 && numero2 === numero3) {
+//     console.log("É equilatero")
+// } else if ((numero1 === numero2 && numero1 !== numero3) || (numero2 === numero3 && numero3 !== numero1)) {
+//     console.log("É isóceles")
+// } else {
+//     console.log("É escaleno")
+// }
+
+
+// 5)
+
+// const numero1 = Number(prompt("Escolha um numero"))
+// const numero2 = Number(prompt("Escolha um numero"))
+
+// if(numero1 > numero2) {
+//     console.log("O " + numero1 + " é maior")
+//     console.log("A diferença entre eles é " + (numero1 - numero2))
+// } else if (numero2 > numero1) {
+//     console.log("O " + numero2 + " é maior")
+//     console.log("A diferença entre eles é " + (numero2 - numero1))
+// } else {
+//     console.log(numero1 + " " + numero2 + " são iguais")
+//     console.log("A diferença entre eles é " + 0)
+// }
+
+// if(numero1 % numero2 === 0) {
+//     console.log("O " + numero1 + " é divisivel pelo " + numero2)
+// } else {
+//     console.log("O " + numero1 + " não é divisivel pelo " + numero2)
+
+// }
+
+// if(numero2 % numero1 === 0) {
+//     console.log("O " + numero2 + " é divisivel pelo " + numero1)
+// } else {
+//     console.log("O " + numero2 + " não é divisivel pelo " + numero1)
+// }
+
+
+
+
+
+
 
 
