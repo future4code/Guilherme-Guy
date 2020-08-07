@@ -205,6 +205,108 @@
 
 // console.log(anonimizarPessoa(pessoa))
 
+
+
+// Exercicios de funções de array:
+
+// 1) 
+
+// a) 
+// const arrayNomes = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
+
+// const callback = (elementoDoArray, index, array) => {
+//     if (elementoDoArray.idade >= 20) {
+//         return true 
+//     }
+//     return false 
+// }
+
+
+// const novoArray = arrayNomes.filter(callback)
+
+// console.log(novoArray)
+
+
+// b)
+
+// const arrayNomes = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ]
+
+// const callback = (elementoDoArray, index, array) => {
+//     if (elementoDoArray.idade < 20) {
+//         return true 
+//     }
+//     return false 
+// }
+
+
+// const novoArray = arrayNomes.filter(callback)
+
+// console.log(novoArray)
+
+
+
+// 2)
+
+// a)
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+// const callback = (elementoDoArray, index, array) => {
+//     return elementoDoArray * 2 }
+
+// const vezes2 = array.map(callback)
+
+// console.log(vezes2)
+
+
+
+
+// b)
+
+// const array = [1, 2, 3, 4, 5, 6]
+
+// const callback = (elementoDoArray, index, array) => {
+//     resultado = String(elementoDoArray*3)
+//     return resultado }
+
+// const vezes3string = array.map(callback)
+
+// console.log(vezes3string)
+
+
+
+// c)
+
+
+// const numeros = [1, 2, 3, 4, 5, 6]
+
+
+// const novoArray = numeros.filter((elementoDoArray, indexDoArray, arrayEmSi) => {
+//     if(elementoDoArray % 2 === 0) {
+//     return `${elementoDoArray} é par`
+// }
+// console.log(novoArray)
+
+
+
+
+
+
+
+
+
+
+
  
 
 
