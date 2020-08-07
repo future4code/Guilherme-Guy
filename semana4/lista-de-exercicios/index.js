@@ -142,7 +142,71 @@
 
 
 
-    
+    // Exercicios de objetos
+
+    // 1) array é uma lista de coisas guardada no mesmo lugar. Objetos são estruturas de sintaxe que nos
+// permitem representar dados mais complexos de
+// uma maneira mais organizada
+
+
+// 2)
+
+// function criaRetangulo() {
+//     lado1 = Number(prompt("Digite o largura"))
+//     lado2 = Number(prompt("Digite o altura"))
+
+//     const retangulo = {
+//         largura: lado1,
+//         altura: lado2,
+//         area: lado1*lado2,
+//         perimetro: 2*(lado1+lado2)
+//     }
+
+//     console.log(retangulo)
+
+// }
+
+// console.log(criaRetangulo())
+ 
+
+
+// 3)
+
+// function filme() {
+
+//     const filmeFavorito = {
+//         titulo: "Tombstone",
+//         ano: 1993 ,
+//         diretor: "George P. Cosmatos",
+//         elenco: ["Val Kilmer", "Kurt Russel"]
+//     }
+
+//     console.log(filmeFavorito)
+
+// }
+
+// console.log(filme())
+
+
+// 4)
+
+//     const pessoa = {
+//         nome: "Guilherme",
+//         idade: 26,
+//         email: "guigl8@hotmail.com",
+//         cidade: "Porto Alegre"
+//     }
+
+
+// function anonimizarPessoa(humano) {
+//    humano.nome = "ANONIMO"
+//    console.log(humano)
+// }
+
+// console.log(anonimizarPessoa(pessoa))
+
+ 
+
 
  
 
