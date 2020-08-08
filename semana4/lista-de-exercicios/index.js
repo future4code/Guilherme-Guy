@@ -241,6 +241,7 @@
 // 	{ nome: "Artur", idade: 89 } 
 // ]
 
+
 // const callback = (elementoDoArray, index, array) => {
 //     if (elementoDoArray.idade < 20) {
 //         return true 
@@ -290,15 +291,106 @@
 
 // const numeros = [1, 2, 3, 4, 5, 6]
 
+// const novoArray = numeros.map((elementoDoArray, indexDoArray, arrayEmSi) => {
+//     if(elementoDoArray % 2 === 0)
+//     return `o numero ${elementoDoArray} é par`
+//     else (elementoDoArray % 2 !== 0)
+//     return `O numero ${elementoDoArray} é impar`
+// })
 
-// const novoArray = numeros.filter((elementoDoArray, indexDoArray, arrayEmSi) => {
-//     if(elementoDoArray % 2 === 0) {
-//     return `${elementoDoArray} é par`
+// console.log(novoArray)
+
+
+// 3)
+
+
+// a)
+// const pessoas = [
+// 	{ nome: "Paula", idade: 12, altura: 1.8},
+// 	{ nome: "João", idade: 20, altura: 1.3},
+// 	{ nome: "Pedro", idade: 15, altura: 1.9},
+// 	{ nome: "Luciano", idade: 22, altura: 1.8},
+// 	{ nome: "Artur", idade: 10, altura: 1.2},
+// 	{ nome: "Soter", idade: 70, altura: 1.9}
+// ]
+
+// const callback = (elementoDoArray, index, array) => { 
+//     if (elementoDoArray.idade > 14 && elementoDoArray.idade < 60 && elementoDoArray.altura > 1.5) {
+//         return true 
+//     }
+//     return false 
 // }
+
+
+// const podemBrincar = pessoas.filter(callback)
+
+// console.log(podemBrincar)
+
+
+// b) 
+
+const pessoas = [
+	{ nome: "Paula", idade: 12, altura: 1.8},
+	{ nome: "João", idade: 20, altura: 1.3},
+	{ nome: "Pedro", idade: 15, altura: 1.9},
+	{ nome: "Luciano", idade: 22, altura: 1.8},
+	{ nome: "Artur", idade: 10, altura: 1.2},
+	{ nome: "Soter", idade: 70, altura: 1.9}
+]
+
+// const callback = (elementoDoArray, index, array) => { 
+//     if (elementoDoArray.idade > 14 && elementoDoArray.idade < 60 && elementoDoArray.altura > 1.5) {
+//         return false 
+//     }
+//     return true 
+// }
+
+
+// const podemBrincar = pessoas.filter(callback)
+
+// console.log(podemBrincar)
+
+
+
+// 4)
+
+// const consultas = [
+// 	{ nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+// 	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+// 	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+// 	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+// ]
+
+
+
+// const novoArray = consultas.map((elementoDoArray, indexDoArray, arrayEmSi) => {
+//     if(elementoDoArray.cancelada === true && elementoDoArray.genero === "masculino") 
+//     return `Olá Sr ${elementoDoArray.nome}. Estamos enviando esta mensagem para lembra-lo da sua consulta no dia ${elementoDoArray.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail`
+//     else if  (elementoDoArray.cancelada === false && elementoDoArray.genero === "masculino")
+//     return `Olá Sr ${elementoDoArray.nome}. Estamos enviando esta mensagem para lembra-lo da sua consulta no dia ${elementoDoArray.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail`
+//     else if  (elementoDoArray.cancelada === true && elementoDoArray.genero === "feminino")
+//     return `Olá Sra ${elementoDoArray.nome}. Estamos enviando esta mensagem para lembra-lo da sua consulta no dia ${elementoDoArray.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail`
+//     else if  (elementoDoArray.cancelada === false && elementoDoArray.genero === "feminino")
+//     return `Olá Sra ${elementoDoArray.nome}. Estamos enviando esta mensagem para lembra-lo da sua consulta no dia ${elementoDoArray.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail`
+// })
+
 // console.log(novoArray)
 
 
 
+// 5)
+
+
+
+
+const contas = [
+	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
 
 
 
