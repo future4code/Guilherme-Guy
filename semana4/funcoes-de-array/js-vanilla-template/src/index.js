@@ -76,20 +76,20 @@ const pokemons = [
 
 // _________________________________________________________map()
 
-const callback = (elementoDoArray, index, array) => {
-    return elementoDoArray.vidaMaxima
-}
+// const callback = (elementoDoArray, index, array) => {
+//     return elementoDoArray.vidaMaxima
+// }
 
-const nomeDosPokemons = pokemons.map(callback)
+// const nomeDosPokemons = pokemons.map(callback)
 
-console.log(nomeDosPokemons)
+// console.log(nomeDosPokemons)
 
 
 // _________________________________________________________filter()
 
 
 
-// const callback = (elementoDoArray, index, array) => {
+// const callback = (elementoDoArray, index, array) => { 
 //     if (elementoDoArray.tipo === "fogo") {
 //         return true 
 //     }
