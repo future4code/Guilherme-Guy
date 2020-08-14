@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 import Post from './components/Post/Post';
-import styled from 'styled-components';
+import styled from "styled-components";
 
 
 
 class App extends React.Component {
+
+
 
 
   state = {
@@ -86,6 +88,9 @@ class App extends React.Component {
     });
     
     return (
+
+  
+
       <div className={'app-container'}>
 
 <div>
