@@ -329,14 +329,14 @@
 
 // b) 
 
-const pessoas = [
-	{ nome: "Paula", idade: 12, altura: 1.8},
-	{ nome: "João", idade: 20, altura: 1.3},
-	{ nome: "Pedro", idade: 15, altura: 1.9},
-	{ nome: "Luciano", idade: 22, altura: 1.8},
-	{ nome: "Artur", idade: 10, altura: 1.2},
-	{ nome: "Soter", idade: 70, altura: 1.9}
-]
+// const pessoas = [
+// 	{ nome: "Paula", idade: 12, altura: 1.8},
+// 	{ nome: "João", idade: 20, altura: 1.3},
+// 	{ nome: "Pedro", idade: 15, altura: 1.9},
+// 	{ nome: "Luciano", idade: 22, altura: 1.8},
+// 	{ nome: "Artur", idade: 10, altura: 1.2},
+// 	{ nome: "Soter", idade: 70, altura: 1.9}
+// ]
 
 // const callback = (elementoDoArray, index, array) => { 
 //     if (elementoDoArray.idade > 14 && elementoDoArray.idade < 60 && elementoDoArray.altura > 1.5) {
@@ -394,15 +394,15 @@ const pessoas = [
 
 
 
-const quantidade = prompt("Quantas maças voce quer comprar?")
+// const quantidade = prompt("Quantas maças voce quer comprar?")
 
-if(quantidade < 12) {
-    resultado = quantidade * 1.3
-    console.log("O total e pagar é " + resultado + "R$")
-} else {
-    resultado = quantidade * 1
-    console.log("O total e pagar é " + resultado + "R$")
-}
+// if(quantidade < 12) {
+//     resultado = quantidade * 1.3
+//     console.log("O total e pagar é " + resultado + "R$")
+// } else {
+//     resultado = quantidade * 1
+//     console.log("O total e pagar é " + resultado + "R$")
+// }
 
 
 

@@ -3,7 +3,14 @@ import axios from "axios";
 import styled from 'styled-components'
 
 const Container = styled.div `
-color: blue;` 
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 20%;
+  margin: 0 auto;
+  padding: 30px;
+  align-items: center;
+  margin-top:50px;` 
 
 const BotaoSalvar =  styled.button`
 color: red;`
@@ -42,18 +49,32 @@ componentDidMount(){
 
 addUsuario = () => {
   const body = {
-    name: this.state.nomePlaylist
+    name: this.state.name,
+    email: this.state.email
   };
 
   const request = axios.post(
-    "https://us-central1-labenu-apis.cloudfunctions.net/labefy/playlists",
+    "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
     body,
     {
       headers: {
-        Authorization: "leticia-chijo"
+        Authorization: "guilherme-guy-jackson"
       }
     }
-  );}
+  ); request 
+  .then((resposta) =>{
+    this.getUsers()
+    alert("Salvo com Sucesso")
+    this.setState({name:""})
+    this.setState({email:""})
+  })
+  .catch((erro) => {
+    alert("Verificar Nome ou E-mail")
+  })
+}
+
+  
+
 
 
 
@@ -67,19 +88,25 @@ addUsuario = () => {
     const onChangeInputEmail = (event) => {
       this.setState({email: event.target.value})
     }
-      console.log(this.state.name)
-      console.log(this.state.email)
+
     return (
         <Container>
           <div>
-              <label forHtml="name">Nome: </label>
+              <label>Nome: </label>
               <input value={this.state.name} onChange={onChangeInputName}/>
           </div>
           <div>
-              <label forHtml="email">Email: </label>
+              <label>Email: </label>
               <input value={this.state.email} onChange={onChangeInputEmail}/>
           </div>
-          <BotaoSalvar onClick={this.usuario}>Salvar</BotaoSalvar>   
+          <BotaoSalvar onClick={this.addUsuario}>Salvar</BotaoSalvar> 
+
+          {this.state.usuarios.map((item) => {
+                return <li key={item.id}>{item.name}</li>
+
+        })}  
+
+      
         </Container>
       );
   }
