@@ -1,5 +1,40 @@
 import React from 'react'
 import axios from "axios";
+import styled from 'styled-components'
+
+const ContainerGeral = styled.div `
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 400px;
+  margin: 0 auto;
+  margin-top:5vh;
+  background-color: orange;
+`
+const ContainerConteudo = styled.div `
+margin-left: 1vw;
+`
+const ContainerTop= styled.div `
+`
+
+
+const Input = styled.input ` 
+width:200px;
+height:25px;
+word-wrap: break-word;`
+
+const Botao = styled.button ` 
+width:192px;
+height: 30px;
+word-wrap: break-word;`
+
+const Texto = styled.p ` 
+font-size: 1rem;
+word-wrap: break-word;
+`
+
+
+
 class App extends React.Component {
 
 
@@ -26,9 +61,7 @@ class App extends React.Component {
           logradouro: resposta.data.logradouro,
           uf: resposta.data.uf
         })
-
         if (this.state.cep.length) {
-          alert("CEP encontrado")
         }
       })
 
@@ -46,34 +79,38 @@ class App extends React.Component {
      };
        render () {
        return (
-      <div >
-        <input
+      <ContainerGeral>
+        <ContainerTop>
+        <Input
           maxLength = "8"
-          placeholder="Digite seu CEP"
+          placeholder="Digite o CEP (apenas números)"
           type="number"
           value={this.state.cep}
           onChange={this.onChangeCep}
         />
-        <p>
+         <Botao onClick={this.buscarCep}>Buscar</Botao>
+         </ContainerTop>
+         <ContainerConteudo>
+        <Texto>
           <strong>Bairro:{this.state.bairro}</strong>
-        </p>
-        <p>
+        </Texto>
+        <Texto>
           <strong>CEP:{this.state.cep}</strong>
-        </p>
-        <p>
+        </Texto>
+        <Texto>
           <strong>DDD:{this.state.ddd}</strong>
-        </p>
-        <p>
+        </Texto>
+        <Texto>
           <strong>Localidade:{this.state.localidade}</strong>
-        </p>
-        <p>
+        </Texto>
+        <Texto>
           <strong>Logradouro:{this.state.logradouro}</strong>
-        </p>
-        <p>
+        </Texto>
+        <Texto>
           <strong>UF:{this.state.uf}</strong>
-        </p>
-        <button onClick={this.buscarCep}>Buscar</button>
-      </div>
+        </Texto>
+        </ContainerConteudo>
+      </ContainerGeral>
     );
   }
 }
