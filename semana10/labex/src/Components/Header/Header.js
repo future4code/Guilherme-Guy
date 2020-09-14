@@ -8,7 +8,7 @@ export default function Header(props) {
 
     <MainContainer>
     <ImgContainer>
-    <Logo src={props.image} width={"300px"}/>
+    <Logo src={props.image}/>
     </ImgContainer>
     <NavContainer>
     <Text> <strong>{props.name1}</strong> <img src={Rocket} width="15px"></img></Text>

@@ -1,30 +1,46 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-export const MainContainer = styled.div `
-display: flex;
-justify-content: space-evenly;
-background: #F8F8FF;
-height: 27vh;
-`
+export const MainContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  background: #f8f8ff;
+  height: 20vh;
+  width: 100vw;
+`;
 
-export const ImgContainer = styled.div ` 
-`
+export const ImgContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 3vh;
+`;
 
-export const NavContainer = styled.div ` 
-display: flex;
-justify-content: space-evenly;
+export const NavContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`;
+export const Text = styled.p`
+  margin-right: 5vw;
+  font-size: 1rem;
+  cursor: pointer;
+  &:hover {
+    color: #000000;
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
 
+  @media screen and (min-width: 200px) and (max-width: 766px) {
+    font-size: 0.8rem;
+    margin-right: 3vw;
+  }
+`;
 
-`
-export const Text = styled.p ` 
-margin: 5vw;
-cursor:pointer;
-&:hover {
-    color:#000000;
-    transition: 0.5s; 
-    transform: scale(1.2); }`
+export const Logo = styled.img`
+  margin-left: 4vw;
+  width: 25vw;
 
-export const Logo = styled.img ` 
-margin-top: 4vh;
-margin-left: 5vw;
-`
+  @media screen and (min-width: 200px) and (max-width: 766px) {
+    width: 35vw;
+    margin-left: 1vw;
+  }
+`;
