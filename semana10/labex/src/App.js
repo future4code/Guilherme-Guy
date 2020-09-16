@@ -1,11 +1,13 @@
 import React from 'react';
-import HomePage from './PageScreen/HomePage/HomePage'
-import Footer from './Components/Footer/Footer'
+import Hooks from './Hooks/Hooks'
+
 
 function App() {
   return (
     <div className="App">
-     <HomePage />
+
+      <Hooks />
+     
     </div>
   );
 }

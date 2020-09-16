@@ -11,9 +11,10 @@ export const MainContainer = styled.div `
 
 export const FooterTitle = styled.h1 ` 
 font-size: 0.9rem;
+margin-bottom: 5px;
 `
 
 export const Text = styled.p ` 
 font-size: 0.6rem;
-padding: 5px;
+padding: 8px;
 `

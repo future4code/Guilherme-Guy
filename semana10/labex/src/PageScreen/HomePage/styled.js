@@ -18,7 +18,8 @@ height: 16rem;
 
 export const Text = styled.p ` 
 color: white;
-font-size: 1.8rem;
+font-size: 2rem;
+margin-right: 5vw;
 
 @media screen and (min-width: 200px) and (max-width: 766px) {
     font-size: 0.7rem;
