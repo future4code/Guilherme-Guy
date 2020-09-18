@@ -1,15 +1,31 @@
 import {
   MainContainer,
   Body,
-  AnimationContainer,
+  TripsTotal,
   TripsContainer,
+  ImgContainer,
+  NameContainer,
+  PlanetContainer,
+  DateContainer,
+  DurationContainer,
+  DescriptionContainer,
+  BusImg,
+  Title,
+  Text,
+  InfosContainer,
+  Button,
+  ButtonContainer
+
+
 } from "./styled";
 import Header from "../../Components/Header/Header";
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import Footer from "../../Components/Footer/Footer";
-import { Animation } from "../../Components/Animation/Animation";
+import SpaceBus from "../../Img/bus.png"
+import Logo from "../../Img/logo.png";
+import { Animation } from "../../Components/Animation/Animation"
 
 export default function TripsPage() {
   const [trips, setTrips] = useState([]);
@@ -35,23 +51,56 @@ export default function TripsPage() {
 
   return (
     <MainContainer>
-      <Header />
+         <Header
+          image={Logo}
+          name1={"Trips"}
+          name2={"Sign up"}
+          name3={"Sign in"}
+          name4={"Criar Viagem"}
+        />
 
       <Body>
-        <AnimationContainer>
-          <Animation />
-        </AnimationContainer>
 
         <TripsContainer>
           {trips.map((item) => {
             return (
-              <div key={item.id}>
-                <div>
-                  <h1>Planeta:</h1>
-                  <h2> {item.planet}</h2>
-                </div>
-                <hr />
-              </div>
+              <TripsTotal key={item.id}>
+
+                <ImgContainer>
+
+                <BusImg src={SpaceBus}></BusImg>
+                  
+                </ImgContainer>
+
+                <InfosContainer>
+                <NameContainer>
+                  <Title>Viagem:</Title>
+                  <Text> {item.name}</Text>
+                </NameContainer>
+                <PlanetContainer>
+                  <Title>Planeta:</Title>
+                  <Text> {item.planet}</Text>
+                </PlanetContainer>
+                <DateContainer>
+                  <Title>Data:</Title>
+                  <Text> {item.date}</Text>
+                </DateContainer>
+                <DurationContainer>
+                  <Title>Duração:</Title>
+                  <Text> {item.durationInDays} Dias</Text>
+                </DurationContainer>
+                <DescriptionContainer>
+                  <Title>Descrição:</Title>
+                  <Text> {item.description}</Text>
+                </DescriptionContainer>
+                </InfosContainer>
+
+                <ButtonContainer>
+                <Button>Quero Ir!</Button>
+                </ButtonContainer>
+ 
+
+              </TripsTotal>
             );
           })}
         </TripsContainer>

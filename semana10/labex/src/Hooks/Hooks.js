@@ -5,6 +5,7 @@ import TripsPage from '../PageScreen/TripsPage/TripsPage';
 import AplicationPage from '../PageScreen/AplicationPage/AplicationPage';
 import LoginPage from '../PageScreen/LoginPage/LoginPage';
 import TripsDetailsPage from '../PageScreen/TripsDetailsPage/TripsDetailsPage';
+import CreateTripPage from '../PageScreen/CreateTripPage/CreateTripPage'
 
 
 
@@ -33,6 +34,9 @@ export default function Hooks() {
                     </Route>
                     <Route exact path="/login">
                         <LoginPage />
+                    </Route>
+                    <Route exact path="/create">
+                        <CreateTripPage />
                     </Route>
                     <Route>
                         <div>ERROR 404</div>

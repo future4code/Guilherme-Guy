@@ -6,9 +6,9 @@ import { BASE_URL } from "../../Components/Url/Url";
 import { useForm } from "../../Hooks/useForm";
 
 
-const AplicationPage = () => {
+const CreateTripPage = () => {
     const { form, onChange } = useForm(
-        { name: "", age: "", aplicationText: "", profission: "", country: ""}
+        { name: "", planet: "", date: "", description: "", durationInDays: "" }
     );
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -16,15 +16,14 @@ const AplicationPage = () => {
     };
 
     const history = useHistory();
-    const handleAplicationPage = (event) => {
+    const handleCreateTripPage = (event) => {
         event.preventDefault();
         const body = {
             name: form.name,
-            age: form.age,
-            aplicationText: form.aplicationText,
-            profission: form.profission,
-            country: form.country,
-            trip: form.trip,
+            planet: form.planet,
+            date: form.date,
+            description: form.description,
+            durationInDays: form.durationInDays
         }
         console.log("o que esse fazzzzzzz", body)
         axios
@@ -43,8 +42,8 @@ const AplicationPage = () => {
     };
     return (
         <div>
-            <h1>Inscreva-se</h1>
-            <form onSubmit={handleAplicationPage}>
+            <h1>Cadastro de Viagens</h1>
+            <form onSubmit={handleCreateTripPage}>
                 <input
                     value={form.name}
                     type="text"
@@ -103,4 +102,4 @@ const AplicationPage = () => {
         </div>
     );
 }
-export default AplicationPage;
+export default CreateTripPage;

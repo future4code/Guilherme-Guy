@@ -14,6 +14,7 @@ export default function HomePage() {
           name1={"Trips"}
           name2={"Sign up"}
           name3={"Sign in"}
+          name4={"Criar Viagem"}
         />
 
         <Body>
