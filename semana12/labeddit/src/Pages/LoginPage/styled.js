@@ -10,8 +10,15 @@ justify-content: center;
 align-items: center;
 `
 
+export const Form = styled.form `
+width: 100%;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;`
+
 export const InputConfig = styled.div ` 
-width: 90%;
+width: 80%;
 margin-top: 3%;`
 
 export const LogoImage = styled.img ` 
@@ -26,7 +33,7 @@ margin-bottom: 5%;
 
 
 export const ButtonsDiv = styled.div ` 
-width: 70%;
+width: 65%;
 display:flex;
 flex-direction: column;
 justify-content: center;
@@ -44,6 +51,6 @@ align-items: center;
 `
 
 export const ImageLogin = styled.img ` 
-width: 70%;
+width: 60%;
 height: 25rem;
 `

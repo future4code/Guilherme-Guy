@@ -3,6 +3,7 @@ import Hooks from './Hooks/Hooks'
 
 
 const App = () => {
+  document.title="Reddit"
   return (
     <div>
       <Hooks />

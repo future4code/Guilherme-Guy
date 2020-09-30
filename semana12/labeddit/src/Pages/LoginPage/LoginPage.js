@@ -5,10 +5,10 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Logo from '../../Images/logo.png'
 import { useHistory } from "react-router-dom";
 import LoginImage from '../../Images/loginimg.png'
-import { LogoImage, ButtonsDiv, InputsDiv, ImageLogin, Container, InputConfig } from './styled'
-import { goToSignInPage } from "../../Router/Router"
+import { LogoImage, ButtonsDiv, InputsDiv, ImageLogin, Container, InputConfig, Form } from './styled'
+import { goToSignUpPage } from "../../Router/Router"
 import axios from 'axios'
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useForm } from "../../Hooks/useForm";
 
 
@@ -52,7 +52,7 @@ function LoginPage() {
 
     };
     axios
-      .post("https://us-central1-labenu-apis.cloudfunctions.net/labEddit/signup", body)
+      .post("https://us-central1-labenu-apis.cloudfunctions.net/labEddit/login", body)
       .then((response) => {
         console.log("caiu aki nesse loginPage???", response.data)
         window.localStorage.setItem("token", response.data.token);
@@ -72,7 +72,7 @@ function LoginPage() {
       <ThemeProvider theme={theme}>
 
         <LogoImage src={Logo} />
-        <form>
+        <Form>
         <InputsDiv>
           <InputConfig>
             <InputLabel>E-mail</InputLabel>
@@ -90,11 +90,10 @@ function LoginPage() {
             <Input 
             fullWidth="bool"
             value={form.senha}
-                type="password"
-                name="senha"
-                placeholder="senha"
-                required
-                onChange={handleInputChange}></Input>
+            type="password"
+            name="senha"
+            required
+            onChange={handleInputChange}></Input>
           </InputConfig>
         </InputsDiv>
         <ButtonsDiv>
@@ -108,7 +107,7 @@ function LoginPage() {
           <br></br>
 
           <Button 
-          onClick={() => goToSignInPage(history)}
+          onClick={() => goToSignUpPage(history)}
           fullWidth="bool" 
           size="medium" 
           variant="contained" 
@@ -116,7 +115,7 @@ function LoginPage() {
           </Button>
 
         </ButtonsDiv>
-        </form>
+        </Form>
 
         <ImageLogin src={LoginImage} />
 

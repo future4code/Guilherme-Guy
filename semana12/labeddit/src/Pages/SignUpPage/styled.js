@@ -43,7 +43,14 @@ justify-content: center;
 align-items: center;
 `
 
-export const ImageLogin = styled.img ` 
-width: 70%;
-height: 25rem;
+export const RegisterImage = styled.img ` 
+width: 60%;
+height: 15rem;
 `
+
+export const Form = styled.form `
+width: 100%;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;`

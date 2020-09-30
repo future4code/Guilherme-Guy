@@ -3,11 +3,12 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Input from '@material-ui/core/Input';
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import Logo from '../../Images/logo.png'
-import { LogoImage, ButtonsDiv, InputsDiv, ImageLogin, Container, InputConfig } from './styled'
+import { LogoImage, ButtonsDiv, InputsDiv, ImageLogin, Container, InputConfig, RegisterImage, Form } from './styled'
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { useHistory } from "react-router-dom";
 import { useForm } from "../../Hooks/useForm"
+import Register from "../../Images/register.png"
 
 
 const theme = createMuiTheme({
@@ -70,7 +71,7 @@ function SignInPage() {
     <Container>
       <ThemeProvider theme={theme}>
         <LogoImage src={Logo} />
-        <form onSubmit={handleSignUp}>
+        <Form onSubmit={handleSignUp}>
           <InputsDiv>
             <InputConfig>
 
@@ -103,7 +104,6 @@ function SignInPage() {
                 value={form.senha}
                 type="password"
                 name="senha"
-                placeholder="senha"
                 required
                 onChange={handleInputChange}
             ></Input>
@@ -112,11 +112,13 @@ function SignInPage() {
         
         </InputsDiv>
         <ButtonsDiv>
-          <Button onClick={handleSignUp} fullWidth="bool" size="medium" variant="contained" color="primary">Cadastre-se</Button>
+          <Button onClick={handleSignUp} fullWidth="bool" size="medium" variant="contained" color="primary">Cadastrar</Button>
         </ButtonsDiv>
-        </form>
+        </Form>
       
       </ThemeProvider>
+
+      <RegisterImage src={Register} />
 
     </Container >
   );
