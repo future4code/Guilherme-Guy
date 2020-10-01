@@ -27,6 +27,22 @@ function FeedPage() {
     getPosts()
   }, [])
 
+  const votePost = (vote, postId) => {
+    const token = window.localStorage.getItem("token")
+    const body = {
+      direction: vote
+    }
+    axios
+      .put(`https://us-central1-labenu-apis.cloudfunctions.net/labEddit/posts/${postId}/vote`, body, {headers:{
+        Authorization: token
+      }}).then(reponse => {
+        getPosts()
+        console.log(reponse)
+      }).catch(error => {
+        console.log(error)
+      })
+  }
+
 
   return (
     <Container>
@@ -50,6 +66,9 @@ function FeedPage() {
       <Title>{item.title}</Title>
       <Text>{item.text}</Text>
       <Name>{item.username}</Name>
+      <button onClick={() => votePost(+1, item.id)}>Curtir</button>
+      ,<p>{item.votesCount}</p>
+      <button onClick={() => votePost(-1, item.id)}>Descurtir</button>
       <CardFooter>
 
         {/* {item.userVoteDirection}  */}
