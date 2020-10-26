@@ -6,9 +6,11 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const myDate = new Date()
+
 type extract = {
     value: number,
-    date: string,
+    date: Date,
     description: string
 }
 
@@ -162,7 +164,7 @@ app.put("/clients/extract/:id", (req: Request, res: Response) => {
 
         clients[userIndex].transictions.push({
             value: deposit,
-            date: String(new Date()),
+            date: new Date(),
             description: "Cash deposit"
         })
         res.status(200).send({ message: "User update successfully" });
@@ -178,21 +180,22 @@ app.put("/clients/extract/:id", (req: Request, res: Response) => {
 
 app.post("/clients/payments", (req: Request, res: Response): void => {
     try {
-        const { expirationDate, value, description, cpf } = req.body;
-        const today = new Date()
+        let{ expirationDate, value, description, cpf } = req.body;
+       
 
         const userIndex = clients.findIndex((u) => u.cpf === cpf)
 
 
-        if(expirationDate < today) {
-            res.status(400).send({
-                message: "Error!"
-            });
-        }
-      
+         if(expirationDate === ""){
+             expirationDate = myDate
+         } else {
+             const {arrayDate} = expirationDate.split("/")
+             expirationDate = new Date(arrayDate[2], arrayDate[1] -1, arrayDate[0])
+         }
+
             clients[userIndex].transictions.push({
             value: value,
-            date: String(new Date(expirationDate)),
+            date: expirationDate,
             description: description})
             res.status(200).send({ message: "Conta paga" });
 
@@ -206,35 +209,36 @@ app.post("/clients/payments", (req: Request, res: Response): void => {
 
 
 
+// PUT ATUALIZAR TODOS O SALDOS, PAGANDO AS CONTAS DE DATAS ATERIORES A ATUAL
 
-
-
-app.put("/clients/updateaccouts", (req: Request, res: Response) => {
+app.put("/clients/update", (req: Request, res: Response) => {
     try {
-        const { cpf, name, deposit } = req.body;
-        const userIndex = clients.findIndex((u) => u.cpf === cpf)
-        if (userIndex) {
-            throw new Error()
-        }
+        const extractClient = clients.filter((u) => {
+            u.transictions.filter((u2) => {
+            if(u2.description !== "tua description de depósito") {
+            if(u2.date.getDate() < myDate.getDate()) {
+            return u.balance -= u2.value
+            }
+            }
+            })
+            })
 
-        const userIndexName = clients.findIndex((u) => u.name === name)
-        if (userIndexName) {
-            throw new Error()
-        }
-        clients[userIndex].balance = deposit + clients[userIndex].balance;
-
-        clients[userIndex].transictions.push({
-            value: deposit,
-            date: String(new Date()),
-            description: "Cash deposit"
-        })
-        res.status(200).send({ message: "User update successfully" });
+        res.status(200).send(extractClient);
     } catch (error) {
         res.status(400).send({
             message: "User not found"
         });
     }
 })
+
+
+
+
+
+
+
+
+
 
 
 
