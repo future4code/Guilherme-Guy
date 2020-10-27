@@ -1,0 +1,22 @@
+{
+   "name": "first-script",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "start": "tsc && node ./build/index.js",
+      "exec4": "tsc && node ./build/exercicio4.js",
+      "build": "tsc",
+      "dev": "ts-node-dev ./src/index.ts",
+      "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {},
+   "devDependencies": {
+      "@types/node": "^14.14.0",
+      "ts-node-dev": "^1.0.0",
+      "typescript": "^4.0.3"
+   }
+}
