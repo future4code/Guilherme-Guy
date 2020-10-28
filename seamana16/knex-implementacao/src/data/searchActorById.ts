@@ -5,5 +5,6 @@ export const searchActorById = async (id: string): Promise<any> => {
       SELECT * FROM Actor WHERE id = '${id}'
     `)
   
-      return result[0][0], console.log(result[0][0])
+      return result[0][0]
+      console.log(result[0][0])
   }
