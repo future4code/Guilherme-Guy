@@ -119,9 +119,11 @@ FROM Movies m
 LEFT JOIN Rating r on r.movie_id = m.id
 LEFT JOIN MovieCast mc ON m.id = mc.movie_id
 JOIN Actor a ON a.id = mc.actor_id;
-
-
 ``` 
+
+### EXERCICIO 6 
+
+
 
 
 
