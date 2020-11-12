@@ -1,34 +1,34 @@
-// import {Request, Response} from "express"
-// import { createNewPokemon, createNewPokemonWithQueryBuilder } from "../data/createNewPokemon";
-// import { getPokemons } from "../data/getPokemons";
-// import { Pokemon, POKE_TYPES } from "../types";
+import {Request, Response} from "express"
+import { createNewPokemon, createNewPokemonWithQueryBuilder } from "../data/createNewPokemon";
+import { getPokemons } from "../data/getPokemons";
+import { Pokemon, POKE_TYPES } from "../types";
 
-// export const createPokemon = async (req: Request, res: Response): Promise<void> => {
-//    try {
+export const createPokemon = async (req: Request, res: Response): Promise<void> => {
+   try {
 
-//       const { id, name, type } = req.body;
+      const { id, name, type } = req.body;
 
-//       const pokemons: Pokemon[] = await getPokemons()
+      const pokemons: Pokemon[] = await getPokemons()
 
-//       const pokemon: Pokemon | undefined = pokemons.find(
-//          pokemon => pokemon.id === id
-//       )
+      const pokemon: Pokemon | undefined = pokemons.find(
+         pokemon => pokemon.id === id
+      )
 
-//       if (pokemon) {
-//          res.statusCode = 409
-//          throw new Error("Id already exists")
-//       }
+      if (pokemon) {
+         res.statusCode = 409
+         throw new Error("Id already exists")
+      }
 
-//       if (!(type in POKE_TYPES)) {
-//          res.statusCode = 406
-//          throw new Error("Invalid Pokemon types")
-//       }
+      if (!(type in POKE_TYPES)) {
+         res.statusCode = 406
+         throw new Error("Invalid Pokemon types")
+      }
 
-//      await createNewPokemonWithQueryBuilder(id, name, type)
+     await createNewPokemonWithQueryBuilder(id, name, type)
 
-//       res.status(201).send("New Pokemon created!");
-//    } catch (error) {
-//       console.log(error)
-//       res.send(error.message)
-//    }
-// }
+      res.status(201).send("New Pokemon created!");
+   } catch (error) {
+      console.log(error)
+      res.send(error.message)
+   }
+}
